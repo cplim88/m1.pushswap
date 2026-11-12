@@ -6,18 +6,15 @@
 /*   By: chee-lim <chee-lim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 15:37:28 by chee-lim          #+#    #+#             */
-/*   Updated: 2026/11/12 16:28:47 by chee-lim         ###   ########.fr       */
+/*   Updated: 2026/11/12 20:02:02 by chee-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ps_header.h"
 
-int	ps_simple(int sa, int sb)
+int	ps_simple(t_stack sa, t_stack sb, int bench)
 {
 	ft_putstr_fd("[bench] strategy: Simple", STDERR_FILENO);
-	ft_putnbr_fd(sa, 1);
-	ft_putnbr_fd(sb, 1);
 	ft_putstr_fd("am in simple", 1);
-
 	return (1);
 }
