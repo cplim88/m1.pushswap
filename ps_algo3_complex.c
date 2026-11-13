@@ -6,15 +6,18 @@
 /*   By: chee-lim <chee-lim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 15:38:12 by chee-lim          #+#    #+#             */
-/*   Updated: 2026/11/12 20:02:02 by chee-lim         ###   ########.fr       */
+/*   Updated: 2026/11/13 10:58:08 by chee-lim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ps_header.h"
 
-int	ps_complex(t_stack sa, t_stack sb, int bench)
+int	ps_complex(t_stk *sa, t_stk *sb, int bench)
 {
-	ft_putstr_fd("[bench] strategy: Complex", STDERR_FILENO);
-	ft_putstr_fd("am in complex", 1);
+	ft_putstr_fd("[bench] strategy: Complex\n", STDERR_FILENO);
+	ft_putstr_fd("am in complex\n", STDOUT_FILENO);
+	bench = 2;
+	sa->size = 1;
+	sb->size = 2;
 	return (1);
 }
